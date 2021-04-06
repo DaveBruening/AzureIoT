@@ -1,5 +1,5 @@
-Hello.  This is a to-do list made in ASP.NET Core Web API, invoked by JavaScript in an HTML page.
-It's based on __Tutorial: Call an ASP.NET Core web API with JavaScript | Microsoft Docs__, which is located [here](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-5.0).<br/>
+Hello.  This is a Core Console App that interacts with Azure IoT (Internet Of Things) Central via commands, properties, and telemetry.
+It's based on __Tutorial - Connect a generic client app to Azure IoT Central | Microsoft Docs__, which is located [here](https://docs.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device?pivots=programming-language-csharp).<br/>
 I added some neat features :thumbsup:, like:<br/> 
 -	Recording the active to-do items in an unordered list instead of a table<br/>
 -	Recording what I deleted in an unordered list at the bottom of the HTML page<br/>
