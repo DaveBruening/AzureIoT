@@ -3,9 +3,9 @@ It's based on [__Tutorial - Connect a generic client app to Azure IoT Central | 
 I added some neat features :thumbsup:, like:<br/> 
 -	<br/>
 -	<br/>
--	<br/> 
--	<br/>
--	<br/>
+-	Mading the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries.<br/> 
+-	Mading a telemetry for pressure.<br/>
+-	Mading a property for the min temperature since last reboot.<br/>
 -	Changing the device's temperature telemetry from a constant value each debugging session to varying each reporting interval<br/> 
 -	Changing the device's reporting interval from every 5 seconds to every minute. (Alright, that's pretty basic, but it's one of the 
 	  first changes I made, so it was pretty neat!)<br/>
