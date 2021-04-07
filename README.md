@@ -10,4 +10,4 @@ I added some neat features :thumbsup:, ordered from basic to complex:<br/>
 -	Adding the maximum pressure and the number of telemetries in the last debug session to the max-min report command<br/>
 -	Making the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries<br/>
 
-P.S. Please excuse my silly comments.  They're just a way to keep programming fun :smiley:.
+P.S. Please excuse my silly comments in the code.  They're just a way to keep programming fun :smiley:.
