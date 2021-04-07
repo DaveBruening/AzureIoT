@@ -8,6 +8,5 @@ I added some neat features :thumbsup:, ordered from basic to complex:<br/>
 -	Making a telemetry for pressure<br/>
 -	Making a property for the minimum temperature since the last reboot<br/>
 -	Adding the maximum pressure and the number of telemetries in the last debug session to the max-min report command<br/>
--	Making the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries<br/> 
-
+-	Making the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries<br/><br/> 
 P.S. Please excuse my silly comments.  They're just a way to keep programming fun :smiley:.
