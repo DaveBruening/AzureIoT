@@ -5,9 +5,9 @@ I added some neat features :thumbsup:, ordered from basic to complex:<br/>
 -	Changing the device's temperature telemetry from a constant value each debugging session to varying each reporting interval<br/> 
 -	Displaying warning and critical messages in the console when temperature goes above and below thresholds<br/>
 -	Modifying JSON files and using Cloud Shell to create new devices for new versions of the device template<br/>
--	Making a telemetry for pressure.<br/>
--	Making a property for the minimum temperature since the last reboot.<br/>
+-	Making a telemetry for pressure<br/>
+-	Making a property for the minimum temperature since the last reboot<br/>
 -	Adding the maximum pressure and the number of telemetries in the last debug session to the max-min report command<br/>
--	Making the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries.<br/> 
+-	Making the pressureRptDavieB command to display average pressure, temperature/pressure ratio, and the sum of the pressure telemetries<br/> 
 
 P.S. Please excuse my silly comments.  They're just a way to keep programming fun :smiley:.
