@@ -1,0 +1,264 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  /*https://docs.microsoft.com/en-us/azure/iot-central/core/howto-version-device-template
+  version # is at end of ID field */
+  //original: "@id": "dtmi:com:example:Thermostat;1",
+  //Davie changed from 1 to 2 to 3 to 4 to 5:
+  "@id": "dtmi:com:example:Thermostat;8",
+  "@type": "Interface",
+  //original: "displayName": "Thermostat",
+  //"displayName": "Thermostat v2",
+  "displayName": "Thermostat v8",
+  "description": "Reports current temperature and provides desired temperature control.",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Temperature"
+      ],
+      "name": "temperature",
+      "displayName": "Temperature",
+      "description": "Temperature in degrees Celsius.",
+      "schema": "double",
+      "unit": "degreeCelsius"
+    },
+    //Loverboy DavieB added Pressure to pump up the jam:
+    {
+      "@type": [
+        "Telemetry",
+        "Pressure"
+      ],
+      "name": "pressure",
+      "displayName": "Pressure",
+      "description": "Pressure in pascals.",
+      "schema": "double",
+      "unit": "pascal"
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "targetTemperature",
+      "schema": "double",
+      "displayName": "Target Temperature",
+      "description": "Allows to remotely specify the desired target temperature.",
+      "unit": "degreeCelsius",
+      "writable": true
+    },
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "maxTempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Max temperature since last reboot.",
+      "description": "Returns the max temperature since last device reboot."
+    },
+    //minTempSinceLastReboot added by that Sweetie-pie DavieB
+    {
+      "@type": [
+        "Property",
+        "Temperature"
+      ],
+      "name": "minTempSinceLastReboot",
+      "schema": "double",
+      "unit": "degreeCelsius",
+      "displayName": "Min temperature since last reboot.",
+      "description": "Returns the min temperature since last device reboot."
+    },
+    {
+      "@type": "Command",
+      "name": "getMaxMinReport",
+      "displayName": "Get Max-Min report.",
+      "description": "This command returns the max, min and average temperature from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return the max-min report.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "tempReport",
+        "displayName": "Temperature Report",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "maxTemp",
+              "displayName": "Max temperature",
+              "schema": "double"
+            },
+            {
+              "name": "minTemp",
+              "displayName": "Min temperature",
+              "schema": "double"
+            },
+            {
+              "name": "avgTemp",
+              "displayName": "Average Temperature",
+              "schema": "double"
+            },
+            {
+              "name": "startTime",
+              "displayName": "Start Time",
+              "schema": "dateTime"
+            },
+            {
+              "name": "endTime",
+              "displayName": "End Time",
+              "schema": "dateTime"
+            },
+            { //maxPres added by Davie B
+              "name": "maxPres",
+              "displayName": "Max Pressure",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pressureRptDavieB",
+      "displayName": "Get pressureRptDavieB report",
+      "description": "This command returns the pressureRptDavieB from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return pressureRptDavieB.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "pressureRptDavieB",
+        "displayName": "pressureRptDavieB",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "avgPres",
+              "displayName": "avgPres",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pressureRptDavieB2",
+      "displayName": "Get pressureRptDavieB report 2",
+      "description": "This command returns the pressureRptDavieB from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return pressureRptDavieB.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "pressureRptDavieB",
+        "displayName": "pressureRptDavieB",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "avgPres",
+              "displayName": "avgPres",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pressureRptDavieB3",
+      "displayName": "Get pressureRptDavieB report 3",
+      "description": "This command returns the pressureRptDavieB from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return pressureRptDavieB.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "pressureRptDavieB",
+        "displayName": "pressureRptDavieB",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "avgPres",
+              "displayName": "avgPres",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pressureRptDavieB4",
+      "displayName": "Get pressureRptDavieB report 4",
+      "description": "This command returns the pressureRptDavieB from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return pressureRptDavieB.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "pressureRptResponseDavieB",
+        "displayName": "pressureRptResponseDavieB",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "avgPres",
+              "displayName": "avgPres",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "pressureRptDavieB5",
+      "displayName": "Get pressureRptDavieB report 5",
+      "description": "This command returns the pressureRptDavieB from the specified time to the current time.",
+      "request": {
+        "name": "since",
+        "displayName": "Since",
+        "description": "Period to return pressureRptDavieB.",
+        "schema": "dateTime"
+      },
+      "response": {
+        "name": "pressureRptResponseDavieB",
+        "displayName": "pressureRptResponseDavieB",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "avgPres",
+              "displayName": "avgPres",
+              "schema": "double"
+            },
+            {
+              "name": "tempPresRatio",
+              "displayName": "tempPresRatio",
+              "schema": "double"
+            },
+            {
+              "name": "sumPres",
+              "displayName": "sumPres",
+              "schema": "double"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
