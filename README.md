@@ -1,5 +1,5 @@
 Hello.  This is a Core Console App that interacts with Azure IoT (Internet Of Things) Central via commands, properties, and telemetries.
-It's based on [__Tutorial - Connect a generic client app to Azure IoT Central | Microsoft Docs__](https://docs.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device?pivots=programming-language-csharp).  In addition to C# and JSON programming, it involved a lot of configuration in Azure IoT Central.<br/>
+It's based on [__Tutorial - Connect a generic client app to Azure IoT Central | Microsoft Docs__](https://docs.microsoft.com/en-us/azure/iot-central/core/tutorial-connect-device?pivots=programming-language-csharp).  In addition to C# and JSON programming, it involved a lot of configuration in Azure IoT Central, like making tiles/dashboards to display telemetry values over time.<br/>
 I added some neat features :thumbsup:, ordered from basic to complex:<br/> 
 -	Changing the device's reporting interval from every 5 seconds to every minute<br/>
 -	Changing the device's temperature telemetry from a constant value each debugging session to varying each reporting interval<br/> 
